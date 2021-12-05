@@ -1,5 +1,7 @@
 # Mininet Docker Base Image 🐳
 
+[![Docker](https://github.com/scc365/mininet-base-image/actions/workflows/docker.yml/badge.svg?branch=main)](https://github.com/scc365/mininet-base-image/actions/workflows/docker.yml)
+
 This is a base image for a dockerizing Mininet topologies. It can be used to dockerize topologies that uses Mininet's Python API or, by using the `mn` image, topologies that are instantiated via the `mn` CLI tool.
 
 ## Available Images
