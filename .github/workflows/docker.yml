@@ -29,7 +29,8 @@ jobs:
           platforms: linux/amd64, linux/arm64/v8
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/mnexec:latest
-          no-cache: false
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           labels: |
             org.opencontainers.image.title=mininet-mnexec
             org.opencontainers.image.url=${{ github.event.repository.html_url }}
@@ -59,7 +60,8 @@ jobs:
           platforms: linux/amd64, linux/arm64/v8
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/mnof:latest
-          no-cache: false
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           labels: |
             org.opencontainers.image.title=mininet-openflow
             org.opencontainers.image.url=${{ github.event.repository.html_url }}
@@ -90,7 +92,8 @@ jobs:
           platforms: linux/amd64, linux/arm64/v8
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/mininet:latest
-          no-cache: false
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           labels: |
             org.opencontainers.image.title=${{ github.event.repository.name }}
             org.opencontainers.image.url=${{ github.event.repository.html_url }}
@@ -121,7 +124,8 @@ jobs:
           platforms: linux/amd64, linux/arm64/v8
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/mn:latest
-          no-cache: false
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           labels: |
             org.opencontainers.image.title=mn
             org.opencontainers.image.url=${{ github.event.repository.html_url }}
