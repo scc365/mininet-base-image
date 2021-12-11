@@ -11,6 +11,7 @@ RUN apt-get update -q && \
   arping \
   git \
   hping3 \
+  iperf3 \
   iproute2 \
   iputils-ping \
   net-tools \
