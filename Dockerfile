@@ -23,6 +23,7 @@ RUN apt-get update -q && \
   python3-pip \
   python3-setuptools \
   telnet \
+  tshark \
   traceroute && \
   rm -rf /var/lib/apt/lists/*
 
