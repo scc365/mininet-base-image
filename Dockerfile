@@ -7,7 +7,7 @@ FROM ${OPENFLOW_IMAGE} as openflow
 FROM debian:stretch-slim
 
 RUN apt-get update -q && \
-  apt-get install --no-install-recommends -yq \
+  DEBIAN_FRONTEND=noninteractiveapt-get install --no-install-recommends -yqq \
   arping \
   git \
   hping3 \
