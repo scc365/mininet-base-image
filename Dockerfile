@@ -3,7 +3,6 @@ ARG OPENFLOW_IMAGE=ghcr.io/scc365/mnof:latest
 FROM ${MNEXEC_IMAGE} as mnexec
 FROM ${OPENFLOW_IMAGE} as openflow
 
-
 FROM debian:stretch-slim
 
 RUN apt-get update -q && \
